@@ -1,5 +1,16 @@
-import { getDocks } from "./database.js"
+import { getDocks, getHaulers } from "./database.js"
 
+document.addEventListener(
+    "click",
+    (clickEvent) => {
+        const itemClicked = clickEvent.target;
+        if (itemClicked.dataset.type === "dock"){
+            const dockId = itemClicked.dataset.dockId;
+
+        }
+
+    }
+)
 
 export const dockList = () => {
     const docks = getDocks()
