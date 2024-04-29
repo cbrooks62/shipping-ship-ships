@@ -28,6 +28,8 @@ document.addEventListener("click", (clickEvent) => {
 export const shippingShipsList = () => {
   const shippingShips = getShippingShips();
 
+  shippingShips.sort((a, b) => a.name.localeCompare (b.name))
+
   let shippingShipsHTML = "<ul>";
 
   for (const shippingShip of shippingShips) {

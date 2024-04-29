@@ -26,7 +26,7 @@ document.addEventListener(
 
 export const haulerList = () => {
   const haulers = getHaulers();
-
+  haulers.sort((a, b) => a.name.localeCompare (b.name))
   let haulerHTML = "<ul>";
 
   for (const hauler of haulers) {

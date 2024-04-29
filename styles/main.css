@@ -1,0 +1,16 @@
+.title {
+text-align: center;
+color: blue;
+border: dotted;
+border-color: blue;
+}
+
+.details {
+    font-size: 2em;
+    border: dashed;
+    border-color: chartreuse;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: aquamarine;
+}

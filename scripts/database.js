@@ -26,8 +26,6 @@ const database = {
     ]
 }
 
-
-
 export const getDocks = () => {
     return database.docks.map(docks => ({...docks}))
 }
